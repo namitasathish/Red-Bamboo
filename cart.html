@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_cart.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ 
+    <title>Menu</title>
+</head>
+<body>
+    <div class="header">
+        
+        <button style=" margin-left: 10px; justify-content: flex-start" class="home" onclick="window.location.href='index.html'">HOME</button>
+        
+   
+    <nav class="desktop-right">
+        <a href="#" target="_blank" aria-label="Black Facebook Icon">
+            <img alt="Black Facebook Icon" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png" style="margin-top: 3px; width: 15px; height: 15px; object-fit: cover;">
+        </a>
+
+        <a ><svg style="width: 11px; height: 12px; object-fit: cover;" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="none" class="u01b__icon-home"> 
+            <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path> 
+           </svg>
+        </a>
+        
+        <a href="#" target="_blank" aria-label="Black Instagram Icon">
+            <img alt="Black Instagram Icon" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="margin-top: 4px; width: 16px; height: 16px; object-fit: cover;">
+        </a>
+          
+    </nav>
+</div>
+    <div class="container">
+        <h1>Menu</h1>
+        <div id="menu">
+            <!-- Menu items will be dynamically inserted here -->
+        </div>
+        <div class="cart">
+            <h2>Your Cart <a href="#"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a></h2>
+            
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div id="cart-total">
+                Total: $0
+            </div>
+            <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <!-- add cart items  -->
+    <script src="script_cart.js"></script>
+</body>
+</html>
