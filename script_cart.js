@@ -58,6 +58,9 @@ function removeFromCart(itemId) {
     }
 }
 
+
+
+
 function renderCart() {
     const cartContainer = document.getElementById('cart-items');
     cartContainer.innerHTML = '';
@@ -84,14 +87,21 @@ function renderCart() {
     document.getElementById('cart-total').innerText = `Total: $${total}`;
 }
 
+
+
 function updateCartCount() {
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     document.getElementById('cart-count').textContent = cartCount;
 }
 
+
+
+
 function checkout() {
     alert('Please enter your delivery address on the checkout page.');
     window.location.href = 'checkout.html'; // Replace with your checkout page URL
 }
+
+
 
 renderMenu();
