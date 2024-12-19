@@ -15,15 +15,20 @@ const menuItems = [
   
 ];
 
+
 const cart = [];
+
 
 function renderMenu() {
     const menuContainer = document.getElementById('menu');
     menuContainer.innerHTML = '';
+    
     menuItems.forEach(item => {
         const menuItemDiv = document.createElement('div');
         menuItemDiv.classList.add('menu-item');
+        
         menuItemDiv.innerHTML = `
+        
             <img src="${item.img}" alt="${item.name}">
             <div>
                 <h3>${item.name}</h3>
@@ -33,18 +38,24 @@ function renderMenu() {
         `;
         menuContainer.appendChild(menuItemDiv);
     });
+    
 }
 
 function addToCart(itemId) {
+    
     const item = menuItems.find(item => item.id === itemId);
     if (item) {
+        
         const cartItem = cart.find(cartItem => cartItem.id === itemId);
         if (cartItem) {
+            
             cartItem.quantity += 1;
         } else {
+            
             cart.push({ ...item, quantity: 1 });
         }
         renderCart();
+        
         updateCartCount();
     }
 }
