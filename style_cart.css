@@ -1,0 +1,223 @@
+/* style_cart.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #555;
+}
+
+.menu-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-item button:hover {
+    background-color: #0056b3;
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+.cart-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+.menu-item button {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-item button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+#cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #28a745; /* Green circle */
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+   padding: auto;
+  
+}
+.checkout{
+    padding: 7px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color: darkred;
+    color: white;
+   
+}
+.checkout:hover{
+    padding: 7px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color: rgb(183, 5, 5);
+    color: white;
+
+   
+}
+#cart-items button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#cart-items button:hover {
+    background-color: #c82333;
+}
+
+#cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+}
+#cart-items ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: inherit;
+    background-color: rgba(245, 245, 220, 0.5);
+    padding: 0 20px;
+}
+
+.home {
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    color: #333; 
+    cursor: pointer;
+    font-size: large;
+}
+.desktop-left{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+}
+.desktop-center {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    
+   
+}
+ .desktop-center a{
+    text-decoration: none;
+    color: black;
+}
+
+.desktop-left a{
+   text-decoration: none;
+   color: black;
+}
+.desktop-right{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+    gap: 10px;
+}
