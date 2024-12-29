@@ -174,10 +174,10 @@ body{
 .abtcontainer {
     margin: auto;
     margin-top: 70px;
-    background-color: rgba(245, 245, 220, 0.5); /* Beige with 80% opacity */
+    background-color: rgba(245, 245, 220, 0.5); 
     height: 500px;
     width: 400px;
-    border-radius: 9px; /* Optional: to round the corners */
+    border-radius: 9px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
@@ -268,10 +268,10 @@ body{
 .leaflet{
     margin: auto;
     margin-top: 90px;
-    background-color: rgba(245, 245, 220, 0.5); /* Beige with 80% opacity */
+    background-color: rgba(245, 245, 220, 0.5); 
     height: 500px;
     width: 300px;
-    border-radius: 9px; /* Optional: to round the corners */
+    border-radius: 9px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
     float:left;
    
@@ -288,7 +288,7 @@ body{
     width: 100%;
     background-image: url(./assets/connect.jpg);
     background-color: rgba(132, 207, 186, 0.5); 
-    /* background-color: rgba(95, 205, 174, 0.5);  */
+   
     background-blend-mode: overlay; 
     background-size: cover;
     background-position: center;
@@ -342,20 +342,20 @@ font-size: 30px;
   }
 
 
-  /* Modal background overlay */
+
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
-    z-index: 1; /* Sit on top */
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    padding-top: 60px; /* Space from the top */
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px; 
 }
 
-/* Modal Content (The review box) */
+
 .modal-content {
     background-color: #fff;
     margin: 5% auto; /* Center the modal */
