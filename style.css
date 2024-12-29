@@ -358,15 +358,15 @@ font-size: 30px;
 
 .modal-content {
     background-color: #fff;
-    margin: 5% auto; /* Center the modal */
+    margin: 5% auto; 
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    width: 60%; /* Width of the modal */
-    max-width: 700px; /* Maximum width */
+    border-radius: 10px; 
+    width: 60%; 
+    max-width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Close Button */
+
 .close {
     color: #aaa;
     float: right;
@@ -381,7 +381,7 @@ font-size: 30px;
     cursor: pointer;
 }
 
-/* Review Form Styling */
+
 .review-form {
     display: flex;
     flex-direction: column;
@@ -403,7 +403,7 @@ font-size: 30px;
 
 .review-form button {
     padding: 10px;
-    background-color: darkred; /* Red */
+    background-color: darkred; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -413,7 +413,7 @@ font-size: 30px;
 }
 
 .review-form button:hover {
-    background-color:  rgb(183, 5, 5); /* Darker Red */
+    background-color:  rgb(183, 5, 5); 
 }
 
 .reservations-container {
@@ -425,7 +425,7 @@ font-size: 30px;
 
 .reservations-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     margin-top: 20px;
 }
