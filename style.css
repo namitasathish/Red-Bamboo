@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-family: inherit;
+    background-color: rgba(245, 245, 220, 0.5);
+}
+.desktop-left{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+}
+.desktop-center {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    
+   
+}
+ .desktop-center a{
+    text-decoration: none;
+    color: black;
+}
+
+.desktop-left a{
+   text-decoration: none;
+   color: black;
+}
+.desktop-right{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+    gap: 10px;
+}
+.home{
+   height:100vh;
+   background-size: cover;
+   background-position: center center;
+   position: relative;
+   z-index: -2;
+}
+.home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ordersection{
+    height:100vh;
+    width:100%;
+
+}
+.order{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:400px;
+
+    margin: auto;
+    background-color: rgba(245, 245, 220, 0.8);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    
+}
+.order img{
+    margin: auto;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.order img:hover{
+    margin: auto;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    opacity: 0.8;
+    border: 1px solid white;
+}
+.image{
+    margin: auto;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.ordernow:hover{
+    padding: 7px;
+    
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color: rgb(183, 5, 5);
+    color: white;
+
+   
+}
+.ordernow{
+    padding: 7px;
+    
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color:darkred;
+    color: white;
+
+   
+}
+
+.col1{
+    
+    height:100vh;
+    width:50%;
+    float: left;
+}
+.col1 img{
+    object-fit: cover;
+    position: absolute;
+    width:50%;
+    z-index: -1;
+    height: 100vh;
+}
+.col2{
+    background-color: white;
+    height:100vh;
+    width:50%;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    font-family: inherit;
+
+
+}
+
+.about {
+   height:100vh;
+   width:100%;
+ 
+}
+.about .line4 {
+    display: flex;
+    margin: auto;
+    gap:20px;
+    justify-content: center;
+}
+.abtcontainer {
+    margin: auto;
+    margin-top: 70px;
+    background-color: rgba(245, 245, 220, 0.5); /* Beige with 80% opacity */
+    height: 500px;
+    width: 400px;
+    border-radius: 9px; /* Optional: to round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.learnmore:hover{
+  
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: rgb(183, 5, 5);
+    color: white;
+
+   
+}
+.learnmore{
+  
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: darkred;
+    color: white;
+
+   
+}
+.orderpickup:hover{
+    padding: 7px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color: rgb(183, 5, 5);
+    color: white;
+
+   
+}
+.orderpickup{
+    padding: 7px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    background-color: darkred;
+    color: white;
+   
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:200px;
+    margin: auto;
+    background-color: rgba(245, 245, 220, 0.8);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    
+}
+.review{
+    height:110vh;
+    width:100%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+ 
+}
+.leaflet{
+    margin: auto;
+    margin-top: 90px;
+    background-color: rgba(245, 245, 220, 0.5); /* Beige with 80% opacity */
+    height: 500px;
+    width: 300px;
+    border-radius: 9px; /* Optional: to round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    float:left;
+   
+  
+
+}
+.logo{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/connect.jpg);
+    background-color: rgba(132, 207, 186, 0.5); 
+    /* background-color: rgba(95, 205, 174, 0.5);  */
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+}
+
+.connecttext{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+
+}
+.connection{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+ 
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:200px;
+    color: white;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+    font-family: inherit;
+   
+    
+}
+.comments{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-family: inherit;
+}
+.head{
+font-family: inherit;
+color: darkred;
+font-size: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+  }
+
+
+  /* Modal background overlay */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    padding-top: 60px; /* Space from the top */
+}
+
+/* Modal Content (The review box) */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 60%; /* Width of the modal */
+    max-width: 700px; /* Maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Review Form Styling */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-form input,
+.review-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.review-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.review-form button {
+    padding: 10px;
+    background-color: darkred; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color:  rgb(183, 5, 5); /* Darker Red */
+}
+
+.reservations-container {
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.reservations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.reservation-box {
+    padding: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-box h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.reservation-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.reserve-seat {
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: darkred;
+    color: white;
+}
+
+.reserve-seat:hover {
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: rgb(183, 5, 5);
+    color: white;
+}
+
