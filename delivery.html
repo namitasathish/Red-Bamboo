@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information</title>
+    <link rel="stylesheet" type="text/css" href="style_delivery.css"/>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Delivery Information</h1>
+        <form id="delivery-form" onsubmit="storeDeliveryDetails(event)">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required pattern="\d{10}" maxlength="10">
+            </div>
+
+            <div class="input-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="next-button">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script>
+  
+        function storeDeliveryDetails(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+
+            localStorage.setItem('deliveryName', name);
+            localStorage.setItem('deliveryPhone', phone);
+            localStorage.setItem('deliveryAddress', address);
+
+         
+            window.location.href = 'payment.html';
+        }
+    </script>
+</body>
+</html>
