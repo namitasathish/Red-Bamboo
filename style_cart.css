@@ -1,9 +1,12 @@
-
 body {
-    font-family: Arial, sans-serif;
+
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-family: inherit;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .container {
@@ -96,7 +99,7 @@ h1 {
 }
 
 .menu-item button:hover {
-    background-color: #218838; 
+    background-color: #218838; /* Darker green for hover */
 }
 #cart-count {
     display: inline-flex;
@@ -105,7 +108,7 @@ h1 {
     text-align: center;
     width: 20px;
     height: 20px;
-    background-color: #28a745;
+    background-color: #28a745; /* Green circle */
     color: #fff;
     border-radius: 50%;
     font-size: 14px;
@@ -165,12 +168,27 @@ h1 {
     text-align: right;
 }
 #cart-items ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
 }
-header {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(245, 245, 220, 0.8);
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+   
+}
+
+.header {
     display: flex;
+   
     align-items: center;
     height: 60px;
     position: fixed;
@@ -190,32 +208,47 @@ header {
     cursor: pointer;
     font-size: large;
 }
-.desktop-left{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 50px;
-}
-.desktop-center {
-    display: flex;
-    gap: 35px;
-    justify-content: space-between;
-    
-   
-}
- .desktop-center a{
-    text-decoration: none;
-    color: black;
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-.desktop-left a{
-   text-decoration: none;
-   color: black;
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width:100%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #333;
+   
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
 .desktop-right{
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 40px;
-    gap: 10px;
+    right: 80px;
+   
 }
